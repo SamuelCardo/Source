@@ -91,6 +91,10 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Storyboard.storyboard" />
     <None Include="Resources\Info.plist" />
+    <Compile Include="HomeVC.cs" />
+    <Compile Include="HomeVC.designer.cs">
+      <DependentUpon>HomeVC.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -126,9 +130,40 @@
     <ImageAsset Include="Resources\Assets.xcassets\Contents.json" />
     <ImageAsset Include="Resources\Assets.xcassets\FullLogo.imageset\Contents.json" />
     <ImageAsset Include="Resources\Assets.xcassets\FullLogo.imageset\logo-final-4.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Profile.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Profile.imageset\Profile Picture.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Alert.imageset\Contents.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Assets.xcassets\FullLogo.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Profile.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Alert.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Fonts\.DS_Store" />
+    <BundleResource Include="Resources\Fonts\JobDocs_d5f82e40cccbf881e091b49144f2278a.ttf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Black.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Heavy.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Light.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Medium.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Semibold.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Thin.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Ultralight.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-BoldItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Heavy.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-HeavyItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Light.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-LightItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Medium.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-MediumItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-RegularItalic.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Semibold.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-SemiboldItalic.otf" />
+    <BundleResource Include="Resources\Fonts\fontawesome-webfont.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

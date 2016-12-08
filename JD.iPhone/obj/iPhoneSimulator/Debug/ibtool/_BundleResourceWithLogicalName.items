@@ -5,16 +5,16 @@
       <LogicalName>LaunchScreen.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/5-view-6.nib">
-      <LogicalName>Storyboard.storyboardc/5-view-6.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/208-view-209.nib">
+      <LogicalName>Storyboard.storyboardc/208-view-209.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/Info.plist">
       <LogicalName>Storyboard.storyboardc/Info.plist</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/UINavigationController-23.nib">
-      <LogicalName>Storyboard.storyboardc/UINavigationController-23.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/UINavigationController-167.nib">
+      <LogicalName>Storyboard.storyboardc/UINavigationController-167.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>

@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="JD.iPhone/Main.cs" Line="16" Column="2" />
-      <File FileName="JD.iPhone/AppDelegate.cs" Line="29" Column="13" />
+      <File FileName="JD.iPhone/Main.cs" Line="13" Column="59" />
+      <File FileName="JD.iPhone/AppDelegate.cs" Line="34" Column="25" />
+      <File FileName="JD.iPhone/HomeVC.cs" Line="12" Column="3" />
+      <File FileName="JD.iPhone/HomeVC.designer.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,8 +16,10 @@
                 <Node name="ComponentReferenceFolder" expanded="True" />
                 <Node name="Properties" expanded="True" />
                 <Node name="Resources" expanded="True">
-                  <Node name="LaunchScreen.xib" selected="True" />
+                  <Node name="Assets.xcassets" selected="True" />
+                  <Node name="Fonts" expanded="True" />
                 </Node>
+                <Node name="HomeVC.cs" expanded="True" />
               </Node>
             </Node>
           </Node>

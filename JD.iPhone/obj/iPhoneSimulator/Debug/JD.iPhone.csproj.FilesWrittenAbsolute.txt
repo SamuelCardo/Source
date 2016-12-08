@@ -1,0 +1,15 @@
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/optimized/Entitlements.plist
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/optimized/
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/JD.iPhone.exe.mdb
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/JD.iPhone.exe
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/JD.iPhone.exe
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhoneSimulator/Debug/JD.iPhone.exe.mdb
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/Microsoft.WindowsAzure.Mobile.Ext.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/Microsoft.WindowsAzure.Mobile.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/System.Net.Http.Extensions.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhoneSimulator/Debug/System.Net.Http.Primitives.dll

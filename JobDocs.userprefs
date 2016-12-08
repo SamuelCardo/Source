@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/AppDelegate.cs">
+    <Files>
+      <File FileName="JD.iPhone/Main.cs" Line="16" Column="2" />
+      <File FileName="JD.iPhone/AppDelegate.cs" Line="29" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JobDocs" expanded="True">
+            <Node name="Cloud" expanded="True" />
+            <Node name="Mobile" expanded="True">
+              <Node name="JD.iPhone" expanded="True">
+                <Node name="ComponentReferenceFolder" expanded="True" />
+                <Node name="Properties" expanded="True" />
+                <Node name="Resources" expanded="True">
+                  <Node name="LaunchScreen.xib" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Mobile.JD.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.JD.iPhone PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.41EA5FFF-0B4F-4471-8677-162490C2CFCE" />
+</Properties>

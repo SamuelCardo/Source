@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/Resources/Info.plist">
     <Files>
-      <File FileName="JD.iPhone/Main.cs" Line="13" Column="59" />
-      <File FileName="JD.iPhone/AppDelegate.cs" Line="34" Column="25" />
+      <File FileName="JD.iPhone/AppDelegate.cs" Line="49" Column="10" />
       <File FileName="JD.iPhone/HomeVC.cs" Line="12" Column="3" />
-      <File FileName="JD.iPhone/HomeVC.designer.cs" Line="1" Column="1" />
+      <File FileName="JD.iPhone/HomeVC.designer.cs" Line="22" Column="1" />
+      <File FileName="JD.iPhone/Entitlements.plist" />
+      <File FileName="JD.iPhone/Resources/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,13 +14,9 @@
             <Node name="Cloud" expanded="True" />
             <Node name="Mobile" expanded="True">
               <Node name="JD.iPhone" expanded="True">
-                <Node name="ComponentReferenceFolder" expanded="True" />
-                <Node name="Properties" expanded="True" />
                 <Node name="Resources" expanded="True">
-                  <Node name="Assets.xcassets" selected="True" />
-                  <Node name="Fonts" expanded="True" />
+                  <Node name="Info.plist" selected="True" />
                 </Node>
-                <Node name="HomeVC.cs" expanded="True" />
               </Node>
             </Node>
           </Node>

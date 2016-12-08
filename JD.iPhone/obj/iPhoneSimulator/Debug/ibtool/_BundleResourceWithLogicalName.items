@@ -9,12 +9,16 @@
       <LogicalName>Storyboard.storyboardc/208-view-209.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/269-view-270.nib">
+      <LogicalName>Storyboard.storyboardc/269-view-270.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/Info.plist">
       <LogicalName>Storyboard.storyboardc/Info.plist</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/UINavigationController-167.nib">
-      <LogicalName>Storyboard.storyboardc/UINavigationController-167.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/UITabBarController-279.nib">
+      <LogicalName>Storyboard.storyboardc/UITabBarController-279.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>

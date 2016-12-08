@@ -7,6 +7,52 @@
 	<key>com.apple.ibtool.document.notices</key>
 	<dict/>
 	<key>com.apple.ibtool.document.warnings</key>
-	<dict/>
+	<dict>
+		<key>5IH-wY-NeB</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>5IH-wY-NeB</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>8c6-TG-YKz</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>8c6-TG-YKz</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>uCd-3n-nMK</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>uCd-3n-nMK</string>
+				</array>
+				<key>message</key>
+				<string>Constraint referencing items turned off in current configuration. Turn off this constraint in the current configuration.</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>

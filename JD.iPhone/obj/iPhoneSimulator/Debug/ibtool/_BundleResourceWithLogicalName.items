@@ -13,6 +13,10 @@
       <LogicalName>Storyboard.storyboardc/269-view-270.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/HomeVC.nib">
+      <LogicalName>Storyboard.storyboardc/HomeVC.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/Info.plist">
       <LogicalName>Storyboard.storyboardc/Info.plist</LogicalName>
       <Optimize>false</Optimize>

@@ -46,6 +46,7 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>8f083b44-f262-4705-a830-a823aaf90205</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -91,9 +92,14 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="Storyboard.storyboard" />
     <None Include="Resources\Info.plist" />
-    <Compile Include="HomeVC.cs" />
-    <Compile Include="HomeVC.designer.cs">
+    <Compile Include="VC\HomeVC.cs" />
+    <Compile Include="VC\HomeVC.designer.cs">
       <DependentUpon>HomeVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\GradientView.cs" />
+    <Compile Include="CategoryCell.cs" />
+    <Compile Include="CategoryCell.designer.cs">
+      <DependentUpon>CategoryCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -138,15 +144,29 @@
     <Folder Include="Resources\Assets.xcassets\FullLogo.imageset\" />
     <Folder Include="Resources\Assets.xcassets\Profile.imageset\" />
     <Folder Include="Resources\Assets.xcassets\Alert.imageset\" />
+    <Folder Include="VC\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Fonts\.DS_Store" />
-    <BundleResource Include="Resources\Fonts\JobDocs_d5f82e40cccbf881e091b49144f2278a.ttf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Black.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Bold.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Heavy.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Light.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Medium.otf" />
+    <BundleResource Include="Resources\Fonts\JobDocs_d5f82e40cccbf881e091b49144f2278a.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Black.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Heavy.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Light.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Medium.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Regular.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Semibold.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Thin.otf" />
@@ -163,7 +183,9 @@
     <BundleResource Include="Resources\Fonts\SF-UI-Text-RegularItalic.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-Semibold.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-SemiboldItalic.otf" />
-    <BundleResource Include="Resources\Fonts\fontawesome-webfont.ttf" />
+    <BundleResource Include="Resources\Fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

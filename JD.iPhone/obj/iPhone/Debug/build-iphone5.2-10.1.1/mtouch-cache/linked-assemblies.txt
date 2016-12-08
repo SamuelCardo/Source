@@ -1,0 +1,16 @@
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Microsoft.WindowsAzure.Mobile.Ext.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Xml.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Core.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Microsoft.WindowsAzure.Mobile.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Xml.Linq.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/mscorlib.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Newtonsoft.Json.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Mono.CSharp.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Microsoft.CSharp.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Net.Http.Primitives.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/JD.iPhone.exe
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/System.Net.Http.dll
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/mtouch-cache/Link/Mono.Dynamic.Interpreter.dll

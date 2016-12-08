@@ -1,34 +1,19 @@
 ﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/Resources/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JD.Common/JD.Common/Category.cs">
     <Files>
-      <File FileName="JD.iPhone/AppDelegate.cs" Line="49" Column="10" />
-      <File FileName="JD.iPhone/HomeVC.cs" Line="12" Column="3" />
-      <File FileName="JD.iPhone/HomeVC.designer.cs" Line="22" Column="1" />
-      <File FileName="JD.iPhone/Entitlements.plist" />
-      <File FileName="JD.iPhone/Resources/Info.plist" />
+      <File FileName="JD.iPhone/VC/HomeVC.cs" Line="35" Column="4" />
+      <File FileName="JD.iPhone/Main.cs" Line="13" Column="1" />
+      <File FileName="JD.iPhone/CategoryCell.cs" Line="13" Column="2" />
+      <File FileName="JD.iPhone/CategoryCell.designer.cs" Line="17" Column="7" />
+      <File FileName="JD.Common/JD.Common/MyClass.cs" Line="13" Column="1" />
+      <File FileName="JD.Common/JD.Common/Category.cs" Line="11" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="JobDocs" expanded="True">
-            <Node name="Cloud" expanded="True" />
-            <Node name="Mobile" expanded="True">
-              <Node name="JD.iPhone" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="Info.plist" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Mobile.JD.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.Mobile.JD.iPhone PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.41EA5FFF-0B4F-4471-8677-162490C2CFCE" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.JD.iPhone PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.31572f11d95f03ae1cc984ea56f2d5a9be1a44e5" />
 </Properties>

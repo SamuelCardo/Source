@@ -1,13 +1,28 @@
 ﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="JD.Common/JD.Common/Category.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/VC/HomeVC.cs">
     <Files>
-      <File FileName="JD.iPhone/VC/HomeVC.cs" Line="35" Column="4" />
-      <File FileName="JD.iPhone/Main.cs" Line="13" Column="1" />
-      <File FileName="JD.iPhone/CategoryCell.cs" Line="13" Column="2" />
-      <File FileName="JD.iPhone/CategoryCell.designer.cs" Line="17" Column="7" />
-      <File FileName="JD.Common/JD.Common/MyClass.cs" Line="13" Column="1" />
-      <File FileName="JD.Common/JD.Common/Category.cs" Line="11" Column="1" />
+      <File FileName="JD.iPhone/VC/HomeVC.designer.cs" Line="53" Column="14" />
+      <File FileName="JD.iPhone/VC/HomeVC.cs" Line="28" Column="8" />
+      <File FileName="JD.iPhone/Main.cs" Line="16" Column="2" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JobDocs" expanded="True">
+            <Node name="Mobile" expanded="True">
+              <Node name="JD.Common" expanded="True" />
+              <Node name="JD.iPhone" expanded="True">
+                <Node name="Resources" expanded="True" />
+                <Node name="VC" expanded="True">
+                  <Node name="ExportVC.cs" expanded="True" />
+                  <Node name="HomeVC.cs" expanded="True" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

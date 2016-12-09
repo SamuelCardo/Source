@@ -2,8 +2,8 @@
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/ibtool/_BundleResourceWithLogicalName.items
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/actool/_PartialAppManifest.items
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/actool/_BundleResourceWithLogicalName.items
-/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone7.2-10.1.1/optimized/Entitlements.plist
-/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone7.2-10.1.1/optimized/
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/optimized/Entitlements.plist
+/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/optimized/
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhone/Debug/JD.iPhone.exe.mdb
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhone/Debug/JD.iPhone.exe
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/JD.iPhone.exe
@@ -13,5 +13,3 @@
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhone/Debug/Newtonsoft.Json.dll
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhone/Debug/System.Net.Http.Extensions.dll
 /Users/samuelcardo/Downloads/Source-2/JD.iPhone/bin/iPhone/Debug/System.Net.Http.Primitives.dll
-/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/optimized/Entitlements.plist
-/Users/samuelcardo/Downloads/Source-2/JD.iPhone/obj/iPhone/Debug/build-iphone5.2-10.1.1/optimized/

@@ -20,6 +20,10 @@ namespace JD.iPhone
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView navView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView profileView { get; set; }
 
         [Outlet]
@@ -31,6 +35,11 @@ namespace JD.iPhone
             if (gradientView != null) {
                 gradientView.Dispose ();
                 gradientView = null;
+            }
+
+            if (navView != null) {
+                navView.Dispose ();
+                navView = null;
             }
 
             if (profileView != null) {

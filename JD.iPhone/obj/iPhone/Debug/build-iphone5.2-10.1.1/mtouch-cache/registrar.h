@@ -24,6 +24,9 @@
 @class HomeVC;
 @class GradientView;
 @class CategoryCell;
+@class JD_iPhone_ExportTableSource;
+@class ExportVC;
+@class ExportCell;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;

@@ -101,6 +101,14 @@
     <Compile Include="CategoryCell.designer.cs">
       <DependentUpon>CategoryCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="VC\ExportVC.cs" />
+    <Compile Include="VC\ExportVC.designer.cs">
+      <DependentUpon>ExportVC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportCell.cs" />
+    <Compile Include="ExportCell.designer.cs">
+      <DependentUpon>ExportCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,6 +147,14 @@
     <ImageAsset Include="Resources\Assets.xcassets\Profile.imageset\Contents.json" />
     <ImageAsset Include="Resources\Assets.xcassets\Profile.imageset\Profile Picture.png" />
     <ImageAsset Include="Resources\Assets.xcassets\Alert.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Bell.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Bell.imageset\bell.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Bell.imageset\bell%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Bell.imageset\bell%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Assets.xcassets\FullLogo.imageset\" />

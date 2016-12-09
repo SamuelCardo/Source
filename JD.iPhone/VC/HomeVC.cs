@@ -38,10 +38,6 @@ namespace JD.iPhone
 		public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-			this.NavigationController.NavigationBar.TintColor = null;
-			this.NavigationController.NavigationBar.BarTintColor = null;
-			this.NavigationController.NavigationBar.BackgroundColor = null;
-			//Gradient on top Bar
 			var newGradient = new CAGradientLayer();
 			newGradient.Colors = new CoreGraphics.CGColor[]
 			{
@@ -57,7 +53,7 @@ namespace JD.iPhone
 			gradientView.Layer.MasksToBounds = true;
 
 			gradientView.AddSubview(profileView);
-
+			gradientView.AddSubview(navView);
 			//Dummy data
 			NSMutableArray tableArray = new NSMutableArray();
 			tableArray.Add(new NSMutableSet("Licenses", "3"));

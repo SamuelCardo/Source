@@ -16,7 +16,19 @@ namespace JD.iPhone
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel alertCount { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton bellButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView gradientView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel navTitle { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -28,13 +40,32 @@ namespace JD.iPhone
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton searchButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView table { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (alertCount != null) {
+                alertCount.Dispose ();
+                alertCount = null;
+            }
+
+            if (bellButton != null) {
+                bellButton.Dispose ();
+                bellButton = null;
+            }
+
             if (gradientView != null) {
                 gradientView.Dispose ();
                 gradientView = null;
+            }
+
+            if (navTitle != null) {
+                navTitle.Dispose ();
+                navTitle = null;
             }
 
             if (navView != null) {
@@ -45,6 +76,11 @@ namespace JD.iPhone
             if (profileView != null) {
                 profileView.Dispose ();
                 profileView = null;
+            }
+
+            if (searchButton != null) {
+                searchButton.Dispose ();
+                searchButton = null;
             }
 
             if (table != null) {

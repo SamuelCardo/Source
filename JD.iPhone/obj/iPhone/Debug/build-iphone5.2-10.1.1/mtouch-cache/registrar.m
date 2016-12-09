@@ -415,218 +415,7 @@ exception_handling:;
 }
 
 
-static UIView * native_to_managed_trampoline_10 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
-{
-	MonoObject *retval = NULL;
-	guint32 exception_gchandle = 0;
-	UIView * res = {0};
-	MonoMethod *managed_method = *managed_method_ptr;
-	void *arg_ptrs [0];
-	MONO_ASSERT_GC_SAFE;
-	MONO_THREAD_ATTACH;
-
-	MonoObject *mthis = NULL;
-	if (self) {
-		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-	}
-	if (!managed_method) {
-		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r0, r1, 0, NULL, &exception_gchandle));
-		if (exception_gchandle != 0) goto exception_handling;
-		*managed_method_ptr = managed_method;
-	}
-	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
-	if (exception_gchandle != 0) goto exception_handling;
-	retval = mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
-
-	if (!retval) {
-		res = NULL;
-	} else {
-		id retobj;
-		retobj = xamarin_get_nsobject_handle (retval);
-		xamarin_framework_peer_lock ();
-		[retobj retain];
-		xamarin_framework_peer_unlock ();
-		[retobj autorelease];
-		mt_dummy_use (retval);
-		res = retobj;
-	}
-
-exception_handling:;
-	MONO_THREAD_DETACH;
-	if (exception_gchandle != 0)
-		xamarin_process_managed_exception_gchandle (exception_gchandle);
-	return res;
-}
-
-
-static void native_to_managed_trampoline_11 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UIView * p0, const char *r0, const char *r1, const char *r2)
-{
-	NSObject *nsobj0 = NULL;
-	MonoObject *mobj0 = NULL;
-	int32_t created0 = false;
-	MonoType *paramtype0 = NULL;
-	guint32 exception_gchandle = 0;
-	MonoMethod *managed_method = *managed_method_ptr;
-	void *arg_ptrs [1];
-	MONO_ASSERT_GC_SAFE;
-	MONO_THREAD_ATTACH;
-
-	MonoObject *mthis = NULL;
-	if (self) {
-		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-	}
-	if (!managed_method) {
-		const char *paramptr[1] = { r0 };
-		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
-		if (exception_gchandle != 0) goto exception_handling;
-		*managed_method_ptr = managed_method;
-	}
-	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
-	if (exception_gchandle != 0) goto exception_handling;
-	nsobj0 = (NSObject *) p0;
-	if (nsobj0) {
-		paramtype0 = xamarin_get_parameter_type (managed_method, 0);
-		mobj0 = xamarin_get_nsobject_with_type_for_ptr_created (nsobj0, false, paramtype0, &created0, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-		xamarin_verify_parameter (mobj0, _cmd, self, nsobj0, 0, mono_class_from_mono_type (paramtype0), managed_method);
-	}
-	arg_ptrs [0] = mobj0;
-
-	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
-
-exception_handling:;
-	MONO_THREAD_DETACH;
-	if (exception_gchandle != 0)
-		xamarin_process_managed_exception_gchandle (exception_gchandle);
-	return;
-}
-
-
-static UITableView * native_to_managed_trampoline_12 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
-{
-	MonoObject *retval = NULL;
-	guint32 exception_gchandle = 0;
-	UITableView * res = {0};
-	MonoMethod *managed_method = *managed_method_ptr;
-	void *arg_ptrs [0];
-	MONO_ASSERT_GC_SAFE;
-	MONO_THREAD_ATTACH;
-
-	MonoObject *mthis = NULL;
-	if (self) {
-		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-	}
-	if (!managed_method) {
-		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r0, r1, 0, NULL, &exception_gchandle));
-		if (exception_gchandle != 0) goto exception_handling;
-		*managed_method_ptr = managed_method;
-	}
-	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
-	if (exception_gchandle != 0) goto exception_handling;
-	retval = mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
-
-	if (!retval) {
-		res = NULL;
-	} else {
-		id retobj;
-		retobj = xamarin_get_nsobject_handle (retval);
-		xamarin_framework_peer_lock ();
-		[retobj retain];
-		xamarin_framework_peer_unlock ();
-		[retobj autorelease];
-		mt_dummy_use (retval);
-		res = retobj;
-	}
-
-exception_handling:;
-	MONO_THREAD_DETACH;
-	if (exception_gchandle != 0)
-		xamarin_process_managed_exception_gchandle (exception_gchandle);
-	return res;
-}
-
-
-static void native_to_managed_trampoline_13 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UITableView * p0, const char *r0, const char *r1, const char *r2)
-{
-	NSObject *nsobj0 = NULL;
-	MonoObject *mobj0 = NULL;
-	int32_t created0 = false;
-	MonoType *paramtype0 = NULL;
-	guint32 exception_gchandle = 0;
-	MonoMethod *managed_method = *managed_method_ptr;
-	void *arg_ptrs [1];
-	MONO_ASSERT_GC_SAFE;
-	MONO_THREAD_ATTACH;
-
-	MonoObject *mthis = NULL;
-	if (self) {
-		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-	}
-	if (!managed_method) {
-		const char *paramptr[1] = { r0 };
-		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
-		if (exception_gchandle != 0) goto exception_handling;
-		*managed_method_ptr = managed_method;
-	}
-	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
-	if (exception_gchandle != 0) goto exception_handling;
-	nsobj0 = (NSObject *) p0;
-	if (nsobj0) {
-		paramtype0 = xamarin_get_parameter_type (managed_method, 0);
-		mobj0 = xamarin_get_nsobject_with_type_for_ptr_created (nsobj0, false, paramtype0, &created0, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-		xamarin_verify_parameter (mobj0, _cmd, self, nsobj0, 0, mono_class_from_mono_type (paramtype0), managed_method);
-	}
-	arg_ptrs [0] = mobj0;
-
-	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
-
-exception_handling:;
-	MONO_THREAD_DETACH;
-	if (exception_gchandle != 0)
-		xamarin_process_managed_exception_gchandle (exception_gchandle);
-	return;
-}
-
-
-static void native_to_managed_trampoline_14 (id self, SEL _cmd, MonoMethod **managed_method_ptr, CGRect p0, const char *r0, const char *r1, const char *r2)
-{
-	guint32 exception_gchandle = 0;
-	MonoMethod *managed_method = *managed_method_ptr;
-	void *arg_ptrs [1];
-	MONO_ASSERT_GC_SAFE;
-	MONO_THREAD_ATTACH;
-
-	MonoObject *mthis = NULL;
-	if (self) {
-		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
-		if (exception_gchandle != 0) goto exception_handling;
-	}
-	if (!managed_method) {
-		const char *paramptr[1] = { r0 };
-		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
-		if (exception_gchandle != 0) goto exception_handling;
-		*managed_method_ptr = managed_method;
-	}
-	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
-	if (exception_gchandle != 0) goto exception_handling;
-	arg_ptrs [0] = &p0;
-
-	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
-
-exception_handling:;
-	MONO_THREAD_DETACH;
-	if (exception_gchandle != 0)
-		xamarin_process_managed_exception_gchandle (exception_gchandle);
-	return;
-}
-
-
-static UILabel * native_to_managed_trampoline_15 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
+static UILabel * native_to_managed_trampoline_10 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
 {
 	MonoObject *retval = NULL;
 	guint32 exception_gchandle = 0;
@@ -671,7 +460,7 @@ exception_handling:;
 }
 
 
-static void native_to_managed_trampoline_16 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UILabel * p0, const char *r0, const char *r1, const char *r2)
+static void native_to_managed_trampoline_11 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UILabel * p0, const char *r0, const char *r1, const char *r2)
 {
 	NSObject *nsobj0 = NULL;
 	MonoObject *mobj0 = NULL;
@@ -715,7 +504,7 @@ exception_handling:;
 }
 
 
-static UIButton * native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
+static UIButton * native_to_managed_trampoline_12 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
 {
 	MonoObject *retval = NULL;
 	guint32 exception_gchandle = 0;
@@ -760,7 +549,7 @@ exception_handling:;
 }
 
 
-static void native_to_managed_trampoline_18 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UIButton * p0, const char *r0, const char *r1, const char *r2)
+static void native_to_managed_trampoline_13 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UIButton * p0, const char *r0, const char *r1, const char *r2)
 {
 	NSObject *nsobj0 = NULL;
 	MonoObject *mobj0 = NULL;
@@ -793,6 +582,217 @@ static void native_to_managed_trampoline_18 (id self, SEL _cmd, MonoMethod **man
 		xamarin_verify_parameter (mobj0, _cmd, self, nsobj0, 0, mono_class_from_mono_type (paramtype0), managed_method);
 	}
 	arg_ptrs [0] = mobj0;
+
+	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
+
+exception_handling:;
+	MONO_THREAD_DETACH;
+	if (exception_gchandle != 0)
+		xamarin_process_managed_exception_gchandle (exception_gchandle);
+	return;
+}
+
+
+static UIView * native_to_managed_trampoline_14 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
+{
+	MonoObject *retval = NULL;
+	guint32 exception_gchandle = 0;
+	UIView * res = {0};
+	MonoMethod *managed_method = *managed_method_ptr;
+	void *arg_ptrs [0];
+	MONO_ASSERT_GC_SAFE;
+	MONO_THREAD_ATTACH;
+
+	MonoObject *mthis = NULL;
+	if (self) {
+		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+	}
+	if (!managed_method) {
+		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r0, r1, 0, NULL, &exception_gchandle));
+		if (exception_gchandle != 0) goto exception_handling;
+		*managed_method_ptr = managed_method;
+	}
+	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
+	if (exception_gchandle != 0) goto exception_handling;
+	retval = mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
+
+	if (!retval) {
+		res = NULL;
+	} else {
+		id retobj;
+		retobj = xamarin_get_nsobject_handle (retval);
+		xamarin_framework_peer_lock ();
+		[retobj retain];
+		xamarin_framework_peer_unlock ();
+		[retobj autorelease];
+		mt_dummy_use (retval);
+		res = retobj;
+	}
+
+exception_handling:;
+	MONO_THREAD_DETACH;
+	if (exception_gchandle != 0)
+		xamarin_process_managed_exception_gchandle (exception_gchandle);
+	return res;
+}
+
+
+static void native_to_managed_trampoline_15 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UIView * p0, const char *r0, const char *r1, const char *r2)
+{
+	NSObject *nsobj0 = NULL;
+	MonoObject *mobj0 = NULL;
+	int32_t created0 = false;
+	MonoType *paramtype0 = NULL;
+	guint32 exception_gchandle = 0;
+	MonoMethod *managed_method = *managed_method_ptr;
+	void *arg_ptrs [1];
+	MONO_ASSERT_GC_SAFE;
+	MONO_THREAD_ATTACH;
+
+	MonoObject *mthis = NULL;
+	if (self) {
+		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+	}
+	if (!managed_method) {
+		const char *paramptr[1] = { r0 };
+		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
+		if (exception_gchandle != 0) goto exception_handling;
+		*managed_method_ptr = managed_method;
+	}
+	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
+	if (exception_gchandle != 0) goto exception_handling;
+	nsobj0 = (NSObject *) p0;
+	if (nsobj0) {
+		paramtype0 = xamarin_get_parameter_type (managed_method, 0);
+		mobj0 = xamarin_get_nsobject_with_type_for_ptr_created (nsobj0, false, paramtype0, &created0, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+		xamarin_verify_parameter (mobj0, _cmd, self, nsobj0, 0, mono_class_from_mono_type (paramtype0), managed_method);
+	}
+	arg_ptrs [0] = mobj0;
+
+	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
+
+exception_handling:;
+	MONO_THREAD_DETACH;
+	if (exception_gchandle != 0)
+		xamarin_process_managed_exception_gchandle (exception_gchandle);
+	return;
+}
+
+
+static UITableView * native_to_managed_trampoline_16 (id self, SEL _cmd, MonoMethod **managed_method_ptr, const char *r0, const char *r1)
+{
+	MonoObject *retval = NULL;
+	guint32 exception_gchandle = 0;
+	UITableView * res = {0};
+	MonoMethod *managed_method = *managed_method_ptr;
+	void *arg_ptrs [0];
+	MONO_ASSERT_GC_SAFE;
+	MONO_THREAD_ATTACH;
+
+	MonoObject *mthis = NULL;
+	if (self) {
+		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+	}
+	if (!managed_method) {
+		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r0, r1, 0, NULL, &exception_gchandle));
+		if (exception_gchandle != 0) goto exception_handling;
+		*managed_method_ptr = managed_method;
+	}
+	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
+	if (exception_gchandle != 0) goto exception_handling;
+	retval = mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
+
+	if (!retval) {
+		res = NULL;
+	} else {
+		id retobj;
+		retobj = xamarin_get_nsobject_handle (retval);
+		xamarin_framework_peer_lock ();
+		[retobj retain];
+		xamarin_framework_peer_unlock ();
+		[retobj autorelease];
+		mt_dummy_use (retval);
+		res = retobj;
+	}
+
+exception_handling:;
+	MONO_THREAD_DETACH;
+	if (exception_gchandle != 0)
+		xamarin_process_managed_exception_gchandle (exception_gchandle);
+	return res;
+}
+
+
+static void native_to_managed_trampoline_17 (id self, SEL _cmd, MonoMethod **managed_method_ptr, UITableView * p0, const char *r0, const char *r1, const char *r2)
+{
+	NSObject *nsobj0 = NULL;
+	MonoObject *mobj0 = NULL;
+	int32_t created0 = false;
+	MonoType *paramtype0 = NULL;
+	guint32 exception_gchandle = 0;
+	MonoMethod *managed_method = *managed_method_ptr;
+	void *arg_ptrs [1];
+	MONO_ASSERT_GC_SAFE;
+	MONO_THREAD_ATTACH;
+
+	MonoObject *mthis = NULL;
+	if (self) {
+		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+	}
+	if (!managed_method) {
+		const char *paramptr[1] = { r0 };
+		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
+		if (exception_gchandle != 0) goto exception_handling;
+		*managed_method_ptr = managed_method;
+	}
+	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
+	if (exception_gchandle != 0) goto exception_handling;
+	nsobj0 = (NSObject *) p0;
+	if (nsobj0) {
+		paramtype0 = xamarin_get_parameter_type (managed_method, 0);
+		mobj0 = xamarin_get_nsobject_with_type_for_ptr_created (nsobj0, false, paramtype0, &created0, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+		xamarin_verify_parameter (mobj0, _cmd, self, nsobj0, 0, mono_class_from_mono_type (paramtype0), managed_method);
+	}
+	arg_ptrs [0] = mobj0;
+
+	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
+
+exception_handling:;
+	MONO_THREAD_DETACH;
+	if (exception_gchandle != 0)
+		xamarin_process_managed_exception_gchandle (exception_gchandle);
+	return;
+}
+
+
+static void native_to_managed_trampoline_18 (id self, SEL _cmd, MonoMethod **managed_method_ptr, CGRect p0, const char *r0, const char *r1, const char *r2)
+{
+	guint32 exception_gchandle = 0;
+	MonoMethod *managed_method = *managed_method_ptr;
+	void *arg_ptrs [1];
+	MONO_ASSERT_GC_SAFE;
+	MONO_THREAD_ATTACH;
+
+	MonoObject *mthis = NULL;
+	if (self) {
+		mthis = xamarin_get_managed_object_for_ptr_fast (self, &exception_gchandle);
+		if (exception_gchandle != 0) goto exception_handling;
+	}
+	if (!managed_method) {
+		const char *paramptr[1] = { r0 };
+		managed_method = xamarin_get_reflection_method_method (xamarin_get_method_direct(r1, r2, 1, paramptr, &exception_gchandle));
+		if (exception_gchandle != 0) goto exception_handling;
+		*managed_method_ptr = managed_method;
+	}
+	xamarin_check_for_gced_object (mthis, _cmd, self, managed_method, &exception_gchandle);
+	if (exception_gchandle != 0) goto exception_handling;
+	arg_ptrs [0] = &p0;
 
 	mono_runtime_invoke (managed_method, mthis, arg_ptrs, NULL);
 
@@ -2224,20 +2224,32 @@ exception_handling:;
 @interface HomeVC : UIViewController {
 	XamarinObject __monoObjectGCHandle;
 }
+	@property (nonatomic, assign) UILabel * alertCount;
+	@property (nonatomic, assign) UIButton * bellButton;
 	@property (nonatomic, assign) UIView * gradientView;
+	@property (nonatomic, assign) UILabel * navTitle;
 	@property (nonatomic, assign) UIView * navView;
 	@property (nonatomic, assign) UIView * profileView;
+	@property (nonatomic, assign) UIButton * searchButton;
 	@property (nonatomic, assign) UITableView * table;
 	-(void) release;
 	-(id) retain;
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UILabel *) alertCount;
+	-(void) setAlertCount:(UILabel *)p0;
+	-(UIButton *) bellButton;
+	-(void) setBellButton:(UIButton *)p0;
 	-(UIView *) gradientView;
 	-(void) setGradientView:(UIView *)p0;
+	-(UILabel *) navTitle;
+	-(void) setNavTitle:(UILabel *)p0;
 	-(UIView *) navView;
 	-(void) setNavView:(UIView *)p0;
 	-(UIView *) profileView;
 	-(void) setProfileView:(UIView *)p0;
+	-(UIButton *) searchButton;
+	-(void) setSearchButton:(UIButton *)p0;
 	-(UITableView *) table;
 	-(void) setTable:(UITableView *)p0;
 	-(void) viewDidLoad;
@@ -2267,52 +2279,100 @@ exception_handling:;
 	}
 
 
+	-(UILabel *) alertCount
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_alertCount");
+	}
+
+	-(void) setAlertCount:(UILabel *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_alertCount");
+	}
+
+	-(UIButton *) bellButton
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_bellButton");
+	}
+
+	-(void) setBellButton:(UIButton *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_bellButton");
+	}
+
 	-(UIView *) gradientView
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_gradientView");
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_gradientView");
 	}
 
 	-(void) setGradientView:(UIView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_gradientView");
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_gradientView");
+	}
+
+	-(UILabel *) navTitle
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_navTitle");
+	}
+
+	-(void) setNavTitle:(UILabel *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_navTitle");
 	}
 
 	-(UIView *) navView
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_navView");
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_navView");
 	}
 
 	-(void) setNavView:(UIView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_navView");
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_navView");
 	}
 
 	-(UIView *) profileView
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_profileView");
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_profileView");
 	}
 
 	-(void) setProfileView:(UIView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_profileView");
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, "UIKit.UIView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_profileView");
+	}
+
+	-(UIButton *) searchButton
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_searchButton");
+	}
+
+	-(void) setSearchButton:(UIButton *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_searchButton");
 	}
 
 	-(UITableView *) table
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_table");
+		return native_to_managed_trampoline_16 (self, _cmd, &managed_method, "JD.iPhone.HomeVC, JD.iPhone", "get_table");
 	}
 
 	-(void) setTable:(UITableView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, "UIKit.UITableView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_table");
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, "UIKit.UITableView, Xamarin.iOS", "JD.iPhone.HomeVC, JD.iPhone", "set_table");
 	}
 
 	-(void) viewDidLoad
@@ -2371,7 +2431,7 @@ exception_handling:;
 	-(void) drawRect:(CGRect)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, "CoreGraphics.CGRect, Xamarin.iOS", "Xamarin.GradientView, JD.iPhone", "Draw");
+		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, "CoreGraphics.CGRect, Xamarin.iOS", "Xamarin.GradientView, JD.iPhone", "Draw");
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2390,75 +2450,6 @@ exception_handling:;
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
 		}
 		return rv;
-	}
-@end
-
-@interface CategoryCell : UITableViewCell {
-	XamarinObject __monoObjectGCHandle;
-}
-	@property (nonatomic, assign) UILabel * categoryName;
-	@property (nonatomic, assign) UILabel * itemCount;
-	-(void) release;
-	-(id) retain;
-	-(int) xamarinGetGCHandle;
-	-(void) xamarinSetGCHandle: (int) gchandle;
-	-(UILabel *) categoryName;
-	-(void) setCategoryName:(UILabel *)p0;
-	-(UILabel *) itemCount;
-	-(void) setItemCount:(UILabel *)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-@implementation CategoryCell { } 
-	-(void) release
-	{
-		xamarin_release_trampoline (self, _cmd);
-	}
-
-	-(id) retain
-	{
-		return xamarin_retain_trampoline (self, _cmd);
-	}
-
-	-(int) xamarinGetGCHandle
-	{
-		return __monoObjectGCHandle.gc_handle;
-	}
-
-	-(void) xamarinSetGCHandle: (int) gc_handle
-	{
-		__monoObjectGCHandle.gc_handle = gc_handle;
-		__monoObjectGCHandle.native_object = self;
-	}
-
-
-	-(UILabel *) categoryName
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.CategoryCell, JD.iPhone", "get_categoryName");
-	}
-
-	-(void) setCategoryName:(UILabel *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.CategoryCell, JD.iPhone", "set_categoryName");
-	}
-
-	-(UILabel *) itemCount
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.CategoryCell, JD.iPhone", "get_itemCount");
-	}
-
-	-(void) setItemCount:(UILabel *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.CategoryCell, JD.iPhone", "set_itemCount");
-	}
-
-	-(BOOL) conformsToProtocol:(void *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "System.IntPtr, mscorlib", "Foundation.NSObject, Xamarin.iOS", "InvokeConformsToProtocol");
 	}
 @end
 
@@ -2555,13 +2546,13 @@ exception_handling:;
 	-(UITableView *) table
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, "JD.iPhone.ExportVC, JD.iPhone", "get_table");
+		return native_to_managed_trampoline_16 (self, _cmd, &managed_method, "JD.iPhone.ExportVC, JD.iPhone", "get_table");
 	}
 
 	-(void) setTable:(UITableView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, "UIKit.UITableView, Xamarin.iOS", "JD.iPhone.ExportVC, JD.iPhone", "set_table");
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, "UIKit.UITableView, Xamarin.iOS", "JD.iPhone.ExportVC, JD.iPhone", "set_table");
 	}
 
 	-(void) viewDidLoad
@@ -2574,6 +2565,75 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		native_to_managed_trampoline_1 (self, _cmd, &managed_method, "JD.iPhone.ExportVC, JD.iPhone", "DidReceiveMemoryWarning");
+	}
+
+	-(BOOL) conformsToProtocol:(void *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, "System.IntPtr, mscorlib", "Foundation.NSObject, Xamarin.iOS", "InvokeConformsToProtocol");
+	}
+@end
+
+@interface CategoryCell : UITableViewCell {
+	XamarinObject __monoObjectGCHandle;
+}
+	@property (nonatomic, assign) UILabel * categoryName;
+	@property (nonatomic, assign) UILabel * itemCount;
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(UILabel *) categoryName;
+	-(void) setCategoryName:(UILabel *)p0;
+	-(UILabel *) itemCount;
+	-(void) setItemCount:(UILabel *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+@implementation CategoryCell { } 
+	-(void) release
+	{
+		xamarin_release_trampoline (self, _cmd);
+	}
+
+	-(id) retain
+	{
+		return xamarin_retain_trampoline (self, _cmd);
+	}
+
+	-(int) xamarinGetGCHandle
+	{
+		return __monoObjectGCHandle.gc_handle;
+	}
+
+	-(void) xamarinSetGCHandle: (int) gc_handle
+	{
+		__monoObjectGCHandle.gc_handle = gc_handle;
+		__monoObjectGCHandle.native_object = self;
+	}
+
+
+	-(UILabel *) categoryName
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.CategoryCell, JD.iPhone", "get_categoryName");
+	}
+
+	-(void) setCategoryName:(UILabel *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.CategoryCell, JD.iPhone", "set_categoryName");
+	}
+
+	-(UILabel *) itemCount
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.CategoryCell, JD.iPhone", "get_itemCount");
+	}
+
+	-(void) setItemCount:(UILabel *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.CategoryCell, JD.iPhone", "set_itemCount");
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2639,25 +2699,25 @@ exception_handling:;
 	-(UIButton *) btnSelect
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_17 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_btnSelect");
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_btnSelect");
 	}
 
 	-(void) setBtnSelect:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_btnSelect");
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, "UIKit.UIButton, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_btnSelect");
 	}
 
 	-(UILabel *) categoryName
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_categoryName");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_categoryName");
 	}
 
 	-(void) setCategoryName:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_categoryName");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_categoryName");
 	}
 
 	-(UIImageView *) fileImage
@@ -2675,37 +2735,37 @@ exception_handling:;
 	-(UILabel *) fileName
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_fileName");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_fileName");
 	}
 
 	-(void) setFileName:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_fileName");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_fileName");
 	}
 
 	-(UILabel *) issuedDate
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_issuedDate");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_issuedDate");
 	}
 
 	-(void) setIssuedDate:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_issuedDate");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_issuedDate");
 	}
 
 	-(UILabel *) itemCount
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_itemCount");
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, "JD.iPhone.ExportCell, JD.iPhone", "get_itemCount");
 	}
 
 	-(void) setItemCount:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_itemCount");
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, "UIKit.UILabel, Xamarin.iOS", "JD.iPhone.ExportCell, JD.iPhone", "set_itemCount");
 	}
 
 	-(UIImageView *) openStatus
@@ -3707,9 +3767,9 @@ exception_handling:;
 		{"JD_iPhone_TableSource", "JD.iPhone.TableSource, JD.iPhone", NULL },
 		{"HomeVC", "JD.iPhone.HomeVC, JD.iPhone", NULL },
 		{"GradientView", "Xamarin.GradientView, JD.iPhone", NULL },
-		{"CategoryCell", "JD.iPhone.CategoryCell, JD.iPhone", NULL },
 		{"JD_iPhone_ExportTableSource", "JD.iPhone.ExportTableSource, JD.iPhone", NULL },
 		{"ExportVC", "JD.iPhone.ExportVC, JD.iPhone", NULL },
+		{"CategoryCell", "JD.iPhone.CategoryCell, JD.iPhone", NULL },
 		{"ExportCell", "JD.iPhone.ExportCell, JD.iPhone", NULL },
 		{"UIKit_UITextField__UITextFieldDelegate", "UIKit.UITextField+_UITextFieldDelegate, Xamarin.iOS", NULL },
 		{"__UIGestureRecognizerToken", "UIKit.UIGestureRecognizer+Token, Xamarin.iOS", NULL },
@@ -3840,9 +3900,9 @@ void xamarin_create_classes () {
 	__xamarin_class_map [78].handle = [JD_iPhone_TableSource class];
 	__xamarin_class_map [79].handle = [HomeVC class];
 	__xamarin_class_map [80].handle = [GradientView class];
-	__xamarin_class_map [81].handle = [CategoryCell class];
-	__xamarin_class_map [82].handle = [JD_iPhone_ExportTableSource class];
-	__xamarin_class_map [83].handle = [ExportVC class];
+	__xamarin_class_map [81].handle = [JD_iPhone_ExportTableSource class];
+	__xamarin_class_map [82].handle = [ExportVC class];
+	__xamarin_class_map [83].handle = [CategoryCell class];
 	__xamarin_class_map [84].handle = [ExportCell class];
 	__xamarin_class_map [85].handle = objc_getClass ("UIKit_UITextField__UITextFieldDelegate");
 	__xamarin_class_map [86].handle = objc_getClass ("__UIGestureRecognizerToken");

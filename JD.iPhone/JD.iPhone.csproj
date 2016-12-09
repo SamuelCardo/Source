@@ -97,16 +97,16 @@
       <DependentUpon>HomeVC.cs</DependentUpon>
     </Compile>
     <Compile Include="Util\GradientView.cs" />
-    <Compile Include="CategoryCell.cs" />
-    <Compile Include="CategoryCell.designer.cs">
-      <DependentUpon>CategoryCell.cs</DependentUpon>
-    </Compile>
     <Compile Include="VC\ExportVC.cs" />
     <Compile Include="VC\ExportVC.designer.cs">
       <DependentUpon>ExportVC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExportCell.cs" />
-    <Compile Include="ExportCell.designer.cs">
+    <Compile Include="CustomUI\CategoryCell.cs" />
+    <Compile Include="CustomUI\CategoryCell.designer.cs">
+      <DependentUpon>CategoryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUI\ExportCell.cs" />
+    <Compile Include="CustomUI\ExportCell.designer.cs">
       <DependentUpon>ExportCell.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -155,6 +155,22 @@
     <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search.png" />
     <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search%402x.png" />
     <ImageAsset Include="Resources\Assets.xcassets\Search.imageset\search%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\More.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\More.imageset\more.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\More.imageset\more%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\More.imageset\more%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretDown.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretDown.imageset\caret_down.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretDown.imageset\caret_down%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretDown.imageset\caret_down%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretUp.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretUp.imageset\up-caret.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretUp.imageset\up-caret%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretUp.imageset\caret-up%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Assets.xcassets\FullLogo.imageset\" />
@@ -162,6 +178,11 @@
     <Folder Include="Resources\Assets.xcassets\Alert.imageset\" />
     <Folder Include="VC\" />
     <Folder Include="Util\" />
+    <Folder Include="Resources\Assets.xcassets\More.imageset\" />
+    <Folder Include="CustomUI\" />
+    <Folder Include="Resources\Assets.xcassets\CaretDown.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\CaretUp.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\CaretRight.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Fonts\.DS_Store" />

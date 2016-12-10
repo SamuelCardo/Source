@@ -2755,7 +2755,7 @@ _mono_aot_file_info:
 	.long 96,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 18,192,160,33,164,236,135,190,205,213,191,9,103,158,109,194
+	.byte 28,229,120,212,239,187,178,91,200,62,242,239,198,203,196,36
 	.globl _mono_aot_module_Microsoft_CSharp_info
 	.align 2
 _mono_aot_module_Microsoft_CSharp_info:

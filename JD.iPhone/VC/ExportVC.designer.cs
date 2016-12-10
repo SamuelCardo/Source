@@ -16,10 +16,28 @@ namespace JD.iPhone
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView gradientView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIView navBarView { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView table { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (gradientView != null) {
+                gradientView.Dispose ();
+                gradientView = null;
+            }
+
+            if (navBarView != null) {
+                navBarView.Dispose ();
+                navBarView = null;
+            }
+
             if (table != null) {
                 table.Dispose ();
                 table = null;

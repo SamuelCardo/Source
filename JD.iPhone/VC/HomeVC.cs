@@ -1,5 +1,5 @@
 ﻿using System;
-using CoreAnimation;
+
 using Foundation;
 using UIKit;
 using Xamarin;
@@ -29,7 +29,7 @@ namespace JD.iPhone
 				return 0;
 		}
 	}
-	public partial class HomeVC : UIViewController
+	public partial class HomeVC : BaseVC
 	{
 		public HomeVC(IntPtr handle) : base(handle)
 		{
@@ -39,33 +39,23 @@ namespace JD.iPhone
 		{
 			base.ViewDidLoad();
 
-			//Gradiente on navigation bar
-			var newGradient = new CAGradientLayer();
-			newGradient.Colors = new CoreGraphics.CGColor[]
-			{
-				UIColor.FromRGB(29,131,216).CGColor,
-				UIColor.FromRGB(66,151,213).CGColor
-			};
-			newGradient.Locations = new Foundation.NSNumber[]
-			{
-				.5f,1f
-				};
-			newGradient.Frame = gradientView.Layer.Bounds;
-			gradientView.Layer.AddSublayer(newGradient);
-			gradientView.Layer.MasksToBounds = true;
-			gradientView.AddSubview(profileView);
-			gradientView.AddSubview(navView);
-
-			/////UI configuration
-
-
 			//Dummy data
 			NSMutableArray tableArray = new NSMutableArray();
 			tableArray.Add(new NSMutableSet("Licenses", "3"));
 			tableArray.Add(new NSMutableSet("Licenses", "3"));
 			this.table.Source = new TableSource(tableArray);
 		}
+		public override void ViewDidLayoutSubviews()
+		{
+			base.ViewDidLayoutSubviews();
+			//Gradiente on navigation bar
+			newGradient.Frame = gradientView.Layer.Bounds;
+			gradientView.Layer.AddSublayer(newGradient);
+			gradientView.Layer.MasksToBounds = true;
+			gradientView.AddSubview(profileView);
+			gradientView.AddSubview(navView);
 
+		}
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
@@ -73,4 +63,3 @@ namespace JD.iPhone
 		}
 	}
 }
-

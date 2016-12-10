@@ -9,8 +9,8 @@
       <LogicalName>Storyboard.storyboardc/208-view-209.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/269-view-270.nib">
-      <LogicalName>Storyboard.storyboardc/269-view-270.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/AlertVC.nib">
+      <LogicalName>Storyboard.storyboardc/AlertVC.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/HomeVC.nib">
@@ -21,8 +21,20 @@
       <LogicalName>Storyboard.storyboardc/Info.plist</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/OUt-wa-I9n-view-buz-e7-d6d.nib">
+      <LogicalName>Storyboard.storyboardc/OUt-wa-I9n-view-buz-e7-d6d.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/UITabBarController-279.nib">
       <LogicalName>Storyboard.storyboardc/UITabBarController-279.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/b5a-EH-Jcj-view-Pro-Uv-JzT.nib">
+      <LogicalName>Storyboard.storyboardc/b5a-EH-Jcj-view-Pro-Uv-JzT.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/ibtool-link/Storyboard.storyboardc/pOM-o7-x1q-view-fZY-dh-gFk.nib">
+      <LogicalName>Storyboard.storyboardc/pOM-o7-x1q-view-fZY-dh-gFk.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
   </ItemGroup>

@@ -1,14 +1,22 @@
 ﻿<Properties StartupConfiguration="{F3B26F48-05BF-4A2B-BAC7-AE9EA76939C2}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="JD.iPhone/VC/ExportVC.cs">
     <Files>
-      <File FileName="JD.iPhone/VC/HomeVC.cs" Line="15" Column="15" />
+      <File FileName="JD.iPhone/VC/HomeVC.cs" Line="57" Column="4" />
+      <File FileName="JD.iPhone/VC/ExportVC.cs" Line="40" Column="23" />
+      <File FileName="JD.iPhone/Main.cs" Line="10" Column="27" />
+      <File FileName="JD.iPhone/VC/BaseVC.cs" Line="27" Column="1" />
+      <File FileName="JD.iPhone/VC/ExportVC.designer.cs" Line="23" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>JD.MobileService/JDMobileService.csproj</String>
+    <String>JD.ManagePortal/JD.ManagePortal.xproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.ItemProperties.Mobile.JD.Android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.Mobile.JD.iPhone PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.31572f11d95f03ae1cc984ea56f2d5a9be1a44e5" />
+  <MonoDevelop.Ide.ItemProperties.Mobile.JD.iPhone PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECC83F3B-9527-4025-B433-3971FAD7CF9E" />
 </Properties>

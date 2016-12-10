@@ -9,12 +9,20 @@
       <LogicalName>Storyboard.storyboardc/208-view-209.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone5.2-10.1.1/ibtool-link/Storyboard.storyboardc/AlertVC.nib">
+      <LogicalName>Storyboard.storyboardc/AlertVC.nib</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone5.2-10.1.1/ibtool-link/Storyboard.storyboardc/HomeVC.nib">
       <LogicalName>Storyboard.storyboardc/HomeVC.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone5.2-10.1.1/ibtool-link/Storyboard.storyboardc/Info.plist">
       <LogicalName>Storyboard.storyboardc/Info.plist</LogicalName>
+      <Optimize>false</Optimize>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone5.2-10.1.1/ibtool-link/Storyboard.storyboardc/OUt-wa-I9n-view-buz-e7-d6d.nib">
+      <LogicalName>Storyboard.storyboardc/OUt-wa-I9n-view-buz-e7-d6d.nib</LogicalName>
       <Optimize>false</Optimize>
     </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhone/Debug/build-iphone5.2-10.1.1/ibtool-link/Storyboard.storyboardc/UITabBarController-279.nib">

@@ -109,6 +109,10 @@
     <Compile Include="CustomUI\ExportCell.designer.cs">
       <DependentUpon>ExportCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="VC\BaseVC.cs" />
+    <Compile Include="VC\BaseVC.designer.cs">
+      <DependentUpon>BaseVC.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -171,6 +175,50 @@
     <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret.png" />
     <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret%402x.png" />
     <ImageAsset Include="Resources\Assets.xcassets\CaretRight.imageset\right-caret%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home.imageset\home.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home.imageset\home%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home.imageset\home%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export.imageset\export.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export.imageset\export%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export.imageset\export%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources.imageset\resources.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources.imageset\resources%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources.imageset\resources%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings.imageset\settings.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings.imageset\settings%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings.imageset\settings%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Folder.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Folder.imageset\folder.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Folder.imageset\folder%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Folder.imageset\folder%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Checked.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\UnChecked.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Checked.imageset\checked.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Checked.imageset\checked%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Checked.imageset\checked%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\UnChecked.imageset\unchecked.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\UnChecked.imageset\unchecked%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\UnChecked.imageset\unchecked%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home_selected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home_selected.imageset\home_selected.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home_selected.imageset\home_selected%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Home_selected.imageset\home_selected%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export_selected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export_selected.imageset\export_selected.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export_selected.imageset\export_selected%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Export_selected.imageset\export_selected%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources_selected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources_selected.imageset\resources_selected.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources_selected.imageset\resources_selected%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Resources_selected.imageset\resources_selected%403x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings_selected.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings_selected.imageset\settings_selected.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings_selected.imageset\settings_selected%402x.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Settings_selected.imageset\settings_selected%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Assets.xcassets\FullLogo.imageset\" />
@@ -183,6 +231,17 @@
     <Folder Include="Resources\Assets.xcassets\CaretDown.imageset\" />
     <Folder Include="Resources\Assets.xcassets\CaretUp.imageset\" />
     <Folder Include="Resources\Assets.xcassets\CaretRight.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Home.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Export.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Resources.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Settings.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Folder.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Checked.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\UnChecked.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Home_selected.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Export_selected.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Resources_selected.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\Settings_selected.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Fonts\.DS_Store" />
@@ -204,23 +263,34 @@
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Medium.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="Resources\Fonts\SF-UI-Display-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Display-Regular.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Semibold.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Thin.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Display-Ultralight.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Text-Bold.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\Fonts\SF-UI-Text-BoldItalic.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-Heavy.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-HeavyItalic.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-Light.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-LightItalic.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Text-Medium.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Medium.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\Fonts\SF-UI-Text-MediumItalic.otf" />
-    <BundleResource Include="Resources\Fonts\SF-UI-Text-Regular.otf" />
+    <BundleResource Include="Resources\Fonts\SF-UI-Text-Regular.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
     <BundleResource Include="Resources\Fonts\SF-UI-Text-RegularItalic.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-Semibold.otf" />
     <BundleResource Include="Resources\Fonts\SF-UI-Text-SemiboldItalic.otf" />
     <BundleResource Include="Resources\Fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\Fonts\Gotham-Bold.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>

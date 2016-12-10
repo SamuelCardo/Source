@@ -21,6 +21,7 @@
 @class UIKit_UIControlEventProxy;
 @class AppDelegate;
 @class JD_iPhone_TableSource;
+@class BaseVC;
 @class HomeVC;
 @class GradientView;
 @class JD_iPhone_ExportTableSource;
@@ -28,6 +29,7 @@
 @class CategoryCell;
 @class ExportCell;
 @class UIKit_UITextField__UITextFieldDelegate;
+@class UIKit_UIView_UIViewAppearance;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
@@ -35,6 +37,7 @@
 @class UIKit_UIAlertView__UIAlertViewDelegate;
 @class UIKit_UIBarButtonItem_Callback;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
+@class UIKit_UITabBar_UITabBarAppearance;
 @class UIKit_UIWebView__UIWebViewDelegate;
 @class Xamarin_Controls__MobileServices_ProgressLabel;
 @class Xamarin_Auth__MobileServices_FormAuthenticatorController_FormDelegate;

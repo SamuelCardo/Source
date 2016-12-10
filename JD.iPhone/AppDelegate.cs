@@ -27,7 +27,8 @@ namespace JD.iPhone
 			// If you have defined a root view controller, set it here:
 			initialViewController = Storyboard.InstantiateInitialViewController() as UIViewController;
             Window.RootViewController = initialViewController;
-
+			UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(14, 125, 202);
+			UITabBar.Appearance.BackgroundColor = UIColor.White;
             // make the window visible
             Window.MakeKeyAndVisible();
 

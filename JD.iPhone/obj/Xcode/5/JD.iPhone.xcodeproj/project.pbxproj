@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48AAAC050000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCCC5410000000000000000 /* UIKit.framework */; };
+		B6A289D30000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC4A30F0000000000000000 /* MapKit.framework */; };
+		ED9E78BA0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C091F60000000000000000 /* Foundation.framework */; };
+		249A67A10000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABBC80DD0000000000000000 /* CoreGraphics.framework */; };
+		170CEB0D0000000000000000 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E2F04490000000000000000 /* LaunchScreen.xib */; };
+		CA44EA3A0000000000000000 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516703760000000000000000 /* Storyboard.storyboard */; };
+		F2FCA6A90000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EBFE50000000000000000 /* Entitlements.plist */; };
+		6452ADF90000000000000000 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = EB74C7350000000000000000 /* Contents.json */; };
+		7CB15CF70000000000000000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3763300000000000000000 /* Assets.xcassets */; };
+		F6C137740000000000000000 /* GradientView.h in Sources */ = {isa = PBXBuildFile; fileRef = 7DE350B00000000000000000 /* GradientView.h */; };
+		F4AC5C7B0000000000000000 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE75B70000000000000000 /* GradientView.m */; };
+		F1FE67200000000000000000 /* BaseVC.h in Sources */ = {isa = PBXBuildFile; fileRef = 9641FFAE0000000000000000 /* BaseVC.h */; };
+		B0B589A50000000000000000 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D7A2E10000000000000000 /* BaseVC.m */; };
+		B413B3270000000000000000 /* ExportCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 3B35CC630000000000000000 /* ExportCell.h */; };
+		BAD0062B0000000000000000 /* ExportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F21F670000000000000000 /* ExportCell.m */; };
+		FA9D230F0000000000000000 /* CategoryCell.h in Sources */ = {isa = PBXBuildFile; fileRef = 81BF3C4B0000000000000000 /* CategoryCell.h */; };
+		2945A6120000000000000000 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B067BF4E0000000000000000 /* CategoryCell.m */; };
+		CE3972C70000000000000000 /* ExportVC.h in Sources */ = {isa = PBXBuildFile; fileRef = 555B8C030000000000000000 /* ExportVC.h */; };
+		6A5C117F0000000000000000 /* ExportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E2ABB0000000000000000 /* ExportVC.m */; };
+		FDAD823A0000000000000000 /* HomeVC.h in Sources */ = {isa = PBXBuildFile; fileRef = 84CF9B760000000000000000 /* HomeVC.h */; };
+		9F43256D0000000000000000 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26653EA90000000000000000 /* HomeVC.m */; };
+		40D8C8A00000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = C7FAE1DC0000000000000000 /* AppDelegate.h */; };
+		80A5E5840000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7FEC000000000000000000 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5DF8FBD80000000000000000 /* JD.iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "JD.iPhone.app"; path = "JD.iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFCCC5410000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		3DC4A30F0000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		74C091F60000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		ABBC80DD0000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		9E2F04490000000000000000 /* LaunchScreen.xib */ = {isa = PBXFileReference; name = "LaunchScreen.xib"; path = "LaunchScreen.xib"; sourceTree = "<group>"; };
+		516703760000000000000000 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Storyboard.storyboard"; path = "Storyboard.storyboard"; sourceTree = "<group>"; };
+		7A1EBFE50000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		EB74C7350000000000000000 /* Contents.json */ = {isa = PBXFileReference; name = "Contents.json"; path = "Assets.xcassets/Contents.json"; sourceTree = "<group>"; };
+		3D3763300000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Assets.xcassets"; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		7DE350B00000000000000000 /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GradientView.h"; path = "GradientView.h"; sourceTree = "<group>"; };
+		7BCE75B70000000000000000 /* GradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GradientView.m"; path = "GradientView.m"; sourceTree = "<group>"; };
+		9641FFAE0000000000000000 /* BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BaseVC.h"; path = "BaseVC.h"; sourceTree = "<group>"; };
+		37D7A2E10000000000000000 /* BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "BaseVC.m"; path = "BaseVC.m"; sourceTree = "<group>"; };
+		3B35CC630000000000000000 /* ExportCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExportCell.h"; path = "ExportCell.h"; sourceTree = "<group>"; };
+		41F21F670000000000000000 /* ExportCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ExportCell.m"; path = "ExportCell.m"; sourceTree = "<group>"; };
+		81BF3C4B0000000000000000 /* CategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CategoryCell.h"; path = "CategoryCell.h"; sourceTree = "<group>"; };
+		B067BF4E0000000000000000 /* CategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CategoryCell.m"; path = "CategoryCell.m"; sourceTree = "<group>"; };
+		555B8C030000000000000000 /* ExportVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ExportVC.h"; path = "ExportVC.h"; sourceTree = "<group>"; };
+		F17E2ABB0000000000000000 /* ExportVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ExportVC.m"; path = "ExportVC.m"; sourceTree = "<group>"; };
+		84CF9B760000000000000000 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HomeVC.h"; path = "HomeVC.h"; sourceTree = "<group>"; };
+		26653EA90000000000000000 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "HomeVC.m"; path = "HomeVC.m"; sourceTree = "<group>"; };
+		C7FAE1DC0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		7C7FEC000000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAC0FCAB0000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48AAAC050000000000000000 /* UIKit.framework in Frameworks */,
+				B6A289D30000000000000000 /* MapKit.framework in Frameworks */,
+				ED9E78BA0000000000000000 /* Foundation.framework in Frameworks */,
+				249A67A10000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2040B9ED0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				7C963BC10000000000000000 /* JD.iPhone */,
+				F215F9030000000000000000 /* Frameworks */,
+				4E6B7AD70000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E6B7AD70000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF8FBD80000000000000000 /* JD.iPhone.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		F215F9030000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCCC5410000000000000000 /* UIKit.framework */,
+				3DC4A30F0000000000000000 /* MapKit.framework */,
+				74C091F60000000000000000 /* Foundation.framework */,
+				ABBC80DD0000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		7C963BC10000000000000000 /* JD.iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C7FAE1DC0000000000000000 /* AppDelegate.h */,
+				3D3763300000000000000000 /* Assets.xcassets */,
+				9641FFAE0000000000000000 /* BaseVC.h */,
+				81BF3C4B0000000000000000 /* CategoryCell.h */,
+				7A1EBFE50000000000000000 /* Entitlements.plist */,
+				3B35CC630000000000000000 /* ExportCell.h */,
+				555B8C030000000000000000 /* ExportVC.h */,
+				7DE350B00000000000000000 /* GradientView.h */,
+				84CF9B760000000000000000 /* HomeVC.h */,
+				9E2F04490000000000000000 /* LaunchScreen.xib */,
+				516703760000000000000000 /* Storyboard.storyboard */,
+				52B051FF0000000000000000 /* Assets.xcassets */,
+				FA1F60F60000000000000000 /* Supporting Files */,
+			);
+			name = "JD.iPhone";
+			sourceTree = "<group>";
+		};
+		52B051FF0000000000000000 /* Assets.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+				EB74C7350000000000000000 /* Contents.json */,
+			);
+			name = "Assets.xcassets";
+			sourceTree = "<group>";
+		};
+		FA1F60F60000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C7FEC000000000000000000 /* AppDelegate.m */,
+				37D7A2E10000000000000000 /* BaseVC.m */,
+				B067BF4E0000000000000000 /* CategoryCell.m */,
+				41F21F670000000000000000 /* ExportCell.m */,
+				F17E2ABB0000000000000000 /* ExportVC.m */,
+				7BCE75B70000000000000000 /* GradientView.m */,
+				26653EA90000000000000000 /* HomeVC.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBD768180000000000000000 /* JD.iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417096E80000000000000000 /* Build configuration list for PBXNativeTarget "JD.iPhone" */;
+			buildPhases = (
+				8E3897BB0000000000000000 /* Sources */,
+				AAC0FCAB0000000000000000 /* Frameworks */,
+				9C7CCA330000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JD.iPhone";
+			productName = "JD.iPhone";
+			productReference = 5DF8FBD80000000000000000 /* JD.iPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B839A2B30000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 6F9B57D20000000000000000 /* Build configuration list for PBXProject "JD.iPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2040B9ED0000000000000000;
+			productRefGroup = 4E6B7AD70000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBD768180000000000000000 /* JD.iPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C7CCA330000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170CEB0D0000000000000000 /* LaunchScreen.xib in Resources */,
+				CA44EA3A0000000000000000 /* Storyboard.storyboard in Resources */,
+				F2FCA6A90000000000000000 /* Entitlements.plist in Resources */,
+				6452ADF90000000000000000 /* Contents.json in Resources */,
+				7CB15CF70000000000000000 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E3897BB0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C137740000000000000000 /* GradientView.h in Sources */,
+				F4AC5C7B0000000000000000 /* GradientView.m in Sources */,
+				F1FE67200000000000000000 /* BaseVC.h in Sources */,
+				B0B589A50000000000000000 /* BaseVC.m in Sources */,
+				B413B3270000000000000000 /* ExportCell.h in Sources */,
+				BAD0062B0000000000000000 /* ExportCell.m in Sources */,
+				FA9D230F0000000000000000 /* CategoryCell.h in Sources */,
+				2945A6120000000000000000 /* CategoryCell.m in Sources */,
+				CE3972C70000000000000000 /* ExportVC.h in Sources */,
+				6A5C117F0000000000000000 /* ExportVC.m in Sources */,
+				FDAD823A0000000000000000 /* HomeVC.h in Sources */,
+				9F43256D0000000000000000 /* HomeVC.m in Sources */,
+				40D8C8A00000000000000000 /* AppDelegate.h in Sources */,
+				80A5E5840000000000000000 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44CEC06A0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		9DC618BC0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "JD.iPhone";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F9B57D20000000000000000 /* Build configuration list for PBXProject "JD.iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CEC06A0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		417096E80000000000000000 /* Build configuration list for PBXNativeTarget "JD.iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC618BC0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B839A2B30000000000000000 /* Project object */;
+}
